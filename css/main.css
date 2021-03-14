@@ -1,0 +1,93 @@
+/* GENERAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background-color: #141922;
+}
+
+.fluid-container {
+    display: flex;
+    height: calc(100vh - 90px);
+}
+
+li {
+    list-style: none;
+} 
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+/* UTILITIES */
+/* color */
+.text-color {
+    color: #77797e;
+}
+
+/* text */
+.text-center {
+    text-align: center;
+}
+
+
+/* APP LEFT SIDEBAR */
+.left-side {
+    width: 230px;
+    height: 100%;
+    padding: 20px 20px 0 20px;
+    background-color: #000;
+}
+
+
+/* app header */
+
+.header-app .brand img {
+    height: 40px;
+}
+
+/* APP MAIN CONTENT */
+.main-container {
+    position: relative;
+}
+.main-app {
+    width: calc(100vw - 230px);
+    height: 100%;
+    overflow-y: auto;
+}
+
+.upgrade-bar {
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(8, 11, 18, 0.8);
+}
+
+.main-nav {
+    padding-top: 90px;
+
+}
+.main-nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+/* APP FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    background-color: #282828;
+}
