@@ -25,6 +25,7 @@ a {
     text-decoration: none;
     color: currentColor;
 }
+
 /* UTILITIES */
 .cta {
     display: inline-block;
@@ -52,44 +53,59 @@ a {
 /* APP LEFT SIDEBAR */
 .left-side {
     width: 230px;
-    height: 100%;
     padding: 20px 20px 0 20px;
     background-color: #000;
 }
 
-
+/* top sidebar */
+.top-sidebar {
+    height: calc(100% - 90px) ;
+}
 /* app header */
 
 .header-app .brand img {
     height: 40px;
 }
+.header-app li {
+    display: flex;
+    align-items: center;
+
+}
+.header-app li img {
+    width: 21px;
+}
+/* bottom sidebar */
+.bottom-sidebar {
+    height: 90px;
+}
 
 /* APP MAIN CONTENT */
-.main-container {
-    position: relative;
-}
 .main-app {
-    width: calc(100vw - 230px);
-    height: 100%;
-    padding: 20px;
-    overflow-y: auto;
+    position: relative;
+    flex-grow: 1;
+    padding: 0 20px;
 }
 
 .upgrade-bar {
-    width: 100%;
-    height: 90px;
-    padding-right: 10px;
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 90px;
+    padding-right: 10px;
     text-align: right;
     line-height: 90px;
-    background-color: rgba(8, 11, 18, 0.8);
+    background-color: rgba(8, 11, 18, 0.6);
+}
+
+.main-app .scrollable {
+    height: 100%;
+    padding-top: 90px;
+    overflow-y: auto;
 }
 
 .main-nav {
-    padding-top: 90px;
-
+    margin-top: 20px;
 }
 .main-nav > ul {
     display: flex;
@@ -100,28 +116,31 @@ a {
 }
 
 /* app content */
-.row {
+.albums-list {
     display: flex;
     flex-wrap: wrap;
+
 }
 
-.row .col {
+.albums-list .album {
     width: calc(100% / 6);
     padding: 0 6px;
 } 
 
-.row .col > .cover {
-    /* height: 200px; */
-}
-
-.row .col > .cover img {
+.albums-list .album > .cover img {
+    display: block;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+}
+
+.album .cover.circular {
+    overflow: hidden;
+    border-radius: 50%;
 }
 
 /* APP FOOTER */
-footer {
+footer.player {
     display: flex;
     justify-content: space-between;
     height: 90px;
@@ -132,7 +151,7 @@ footer {
 /* md 768px - 1199px */
 @media screen and (max-width: 1199px) {
     /* MAIN CONTENT */
-    .row .col {
+    .albums-list .album {
         width: calc(100% / 4);
 
     }
@@ -143,7 +162,7 @@ footer {
 /* s 601px - 767px */
 @media screen and (max-width: 767px) {
     /* MAIN CONTENT */
-    .row .col {
+    .albums-list .album {
         width: calc(100% / 2);
 
     }
