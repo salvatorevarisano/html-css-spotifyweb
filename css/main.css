@@ -39,6 +39,11 @@ a {
     border-radius: 30px;
 }
 
+.flex-row-align-center-Y {
+    display: flex;
+    align-items: center;
+}
+
 /* color */
 .text-color {
     color: #77797e;
@@ -56,6 +61,8 @@ aside h4,
 .text-center {
     text-align: center;
 }
+
+
 
 
 /* APP LEFT SIDEBAR */
@@ -83,10 +90,6 @@ aside h4,
 .header-app .brand img {
     height: 40px;
 }
-.header-app li a {
-    display: flex;
-    align-items: center;
-}
 
 /* header icon */
 .header-app li a svg {
@@ -101,12 +104,21 @@ aside h4,
 .top-sidebar h4 {
     margin-top: 15px;
 }
-.personal-playlist > div:first-of-type {
-    height: 3.3em;
-    margin: 10px 0;
-    line-height: 3.3em;
-    background: red;
+
+
+/* *********** TEST *********** per test commenta utility .flex-row-align-Y */
+.personal-playlist > div:first-of-type a span,          
+.personal-playlist > div:first-of-type a i {         
+    display: inline-block;
+    /* vertical-align: middle; */
 }
+ .personal-playlist > div:first-of-type a { 
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 0;
+} 
+/* *********** /TEST ***********/
 
 .personal-playlist > div:first-of-type i {
     font-size: 3.3em;
@@ -117,7 +129,20 @@ aside h4,
 .bottom-sidebar {
     height: 90px;
 }
-
+.bottom-sidebar a {
+    width: 100%;
+}
+.bottom-sidebar .install-app svg {
+    height: 14px;
+}
+.bottom-sidebar .user svg {
+    height: 25px;
+}
+.bottom-sidebar .user .bg-user {
+    padding: 5px;
+    background: red;
+    border-radius: 50%;
+}
 /* APP MAIN CONTENT */
 .main-app {
     position: relative;
