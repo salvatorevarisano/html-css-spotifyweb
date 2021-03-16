@@ -7,7 +7,7 @@
     <title>Spotify</title>
     <!-- GOOGLE FONT  -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
     <!-- CDN FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <!-- STYLE -->
@@ -16,7 +16,7 @@
 <body>
     <div class="fluid-container">
         <!-- app left sidebar -->
-        <aside class="left-side">
+        <aside class="left-side text-color">
             <div class="top-sidebar">
                 <!-- app header -->
                 <header class="header-app">
@@ -29,19 +29,19 @@
                         <ul>
                             <li>
                                 <a href="#">
-                                    <img src="img/home.svg" alt="home">
+                                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#ffffff"/></svg>
                                     Home
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="img/search.svg" alt="search">
+                                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="#ffffff" fill-rule="evenodd"/></svg>
                                     Cerca
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="img/libreria.svg" alt="libreria">
+                                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="#ffffff"/></svg>
                                     La tua libreria
                                 </a>
                             </li>
@@ -53,48 +53,44 @@
                 <div class="personal-playlist">
                     <h4>PLAYLIST</h4>
                     <div>
+                        <i class="fas fa-plus-square"></i>
                         Crea Playlist
                     </div>
                     <nav class="playlist-nav">
                         <ul>
                             <li>
-                                <a href="">
-                                    lorem
+                                <a href="#">
+                                    Nome Playlist
                                 </a>
                             </li>
                             <li>
-                                <a href="">
-                                    lorem
+                                <a href="#">
+                                    Nome Playlist
                                 </a>
                             </li>
                             <li>
-                                <a href="">
-                                    lorem
+                                <a href="#">
+                                    Nome Playlist
                                 </a>
                             </li>
                             <li>
-                                <a href="">
-                                    lorem
+                                <a href="#">
+                                    Nome Playlist
                                 </a>
                             </li>
                             <li>
-                                <a href="">
-                                    lorem
+                                <a href="#">
+                                    Nome Playlist
                                 </a>
                             </li>
                             <li>
-                                <a href="">
-                                    lorem
+                                <a href="#">
+                                    Nome Playlist
                                 </a>
                             </li>
                             <li>
-                                <a href="">
-                                    lorem
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    lorem
+                                <a href="#">
+                                    Nome Playlist
                                 </a>
                             </li>
                         </ul>
@@ -145,44 +141,68 @@
                     <li class="album">
                         <div class="cover">
                             <img src="img/metal_lifting.jpg" alt="heavy metal">
+                            <!-- overlay -->
+                            <div class="overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                         <h3>Heavy Metal</h3>
-                        <div>Subtitle</div>
+                        <div class="subtext text-color">Subtitle</div>
                     </li>
                     <li class="album">
                         <div class="cover">
                             <img src="img/stranger.jpeg" alt="stranger things">
+                            <!-- overlay -->
+                            <div class="overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                         <h3>Stranger Things, Vol.1 (a Netflix original Series Soundtrack)</h3>
-                        <div>Kyle Dixon & Michael Stein</div>
+                        <div class="subtext text-color">Kyle Dixon & Michael Stein</div>
                     </li>
                     <li class="album">
                         <div class="cover">
                             <img src="img/aquietplace.jpeg" alt="a quiet place">
+                            <!-- overlay -->
+                            <div class="overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                         <h3>A quite place</h3>
-                        <div>Subtitle</div>
+                        <div class="subtext text-color">Subtitle</div>
                     </li>
                     <li class="album">
                         <div class="cover">
                             <img src="img/split.jpeg" alt="split">
+                            <!-- overlay -->
+                            <div class="overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                         <h3>Split</h3>
-                        <div>Subtitle</div>
+                        <div class="subtext text-color">Subtitle</div>
                     </li>
                     <li class="album">
                         <div class="cover">
                             <img src="img/cure.jpeg" alt="a cure for wellness">
+                            <!-- overlay -->
+                            <div class="overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                         <h3>A cure for wellness</h3>
-                        <div>Subtitle</div>
+                        <div class="subtext text-color">Subtitle</div>
                     </li>
                     <li class="album">
                         <div class="cover">
                             <img src="img/sinister.jpeg" alt="sinister">
+                            <!-- overlay -->
+                            <div class="overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                         <h3>Sinister</h3>
-                        <div>Subtitle</div>
+                        <div class="subtext text-color">Subtitle</div>
                     </li>
                 </ul>
 
@@ -191,12 +211,20 @@
                     <li class="album">
                         <div class="cover">
                             <img src="img/radar.jpeg" alt="Release Radar">
+                            <!-- overlay -->
+                            <div class="overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                         <h3>Release Radar</h3>
                     </li>
                     <li class="album">
                         <div class="cover">
                             <img src="img/mixdaily.jpeg" alt="Daily Mix">
+                            <!-- overlay -->
+                            <div class="overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                         <h3>Daily Mix</h3>
                     </li>
@@ -207,12 +235,20 @@
                     <li class="album">
                         <div class="circular cover">
                             <img src="img/youg.jpeg" alt="Lana del Ray">
+                            <!-- overlay -->
+                            <div class="overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                         <h3>Lana del Ray</h3>
                     </li>
                     <li class="album">
                         <div class="circular cover">
                             <img src="img/einaudi.jpeg" alt="Ludovico Einaudi">
+                            <!-- overlay -->
+                            <div class="overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                         </div>
                         <h3>Ludovico Einaudi</h3>
                     </li>
