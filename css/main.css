@@ -36,6 +36,7 @@ a {
 .left-side .xs-h {
     display: none;
 }
+
 /* UTILITIES */
 .bar {
     height: 4px;
@@ -51,12 +52,22 @@ a {
     border: 1px solid currentColor;
     border-radius: 30px;
 }
+.hover-big:hover {
+    transform: scale(1.1);
+}
 
+.main-nav li:hover a,
+.left-side li:hover a,
+.hover-white:hover,
+.personal-playlist a:hover i,
+.personal-playlist a:hover span {
+    color: #fff;
+}
+/* layout */
 .flex-row-align-center-Y {
     display: flex;
     align-items: center;
 }
-
 .flex-row-align-center-X {
     display: flex;
     justify-content: center;
@@ -72,6 +83,7 @@ a {
 .margin-l-15 {
     margin-left: 15px;
 }
+
 /* color */
 .text-color {
     color: #77797e;
@@ -331,6 +343,14 @@ footer.player .miniature {
     margin: 0 22px;
 }
 
+.progres-bar-container .bar .progres {
+    height: 100%;
+}
+.progres-bar-container .bar .progres .level {
+    height: 100%;
+    width: 30%;
+    background-color: #C1C1C1;
+}
 /* volume section  */
 .side-player .volume .bar {
     width: 125px;
