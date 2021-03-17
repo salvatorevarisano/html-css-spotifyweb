@@ -29,6 +29,11 @@ a {
 }
 
 /* UTILITIES */
+.bar {
+    height: 4px;
+    background-color: #5A5A5A;
+}
+
 .cta {
     display: inline-block;
     padding:15px 40px;
@@ -210,7 +215,7 @@ aside h4,
     margin-bottom: 9px;
     padding: 0 6px;
 } 
-
+.cover img,
 .albums-list .album > .cover img {
     display: block;
     width: 100%;
@@ -259,6 +264,63 @@ footer.player {
     height: 90px;
     background-color: #282828;
 }
+footer.player .side-player {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 230px;
+}
+
+.side-player ul {
+    display: flex;
+}
+
+footer.player .miniature {
+    height: 50%;
+    width: 45px;
+}
+
+.player h3 {
+    font-size: 0.8rem;
+}
+
+/* central player section  */
+.central-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.central-player .control {
+    display: flex;
+    width: 195px;
+    /* flex-shrink: 0; */
+    justify-content: space-between;
+    font-size: 18px;
+}
+.central-player .control li:nth-child(3) {
+    font-size: 1.8em;
+}
+
+.central-player .progres-bar-container {
+    display: flex;
+}
+.central-player .progres-bar-container .bar {
+    width: 430px;
+    margin: 0 22px;
+}
+
+/* volume section  */
+.side-player .volume .bar {
+    width: 120px;
+}
+
+.side-player .volume > .bar > .level {
+    height: 100%;
+    width: 20%;
+    background-color: #C1C1C1;
+}
+
 
 /* RESPONSIVE */
 /* md 768px - 1199px */
