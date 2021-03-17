@@ -28,6 +28,14 @@ a {
     color: currentColor;
 }
 
+.left-side,
+.main-app {
+    overflow: hidden;
+}
+
+.left-side .xs-h {
+    display: none;
+}
 /* UTILITIES */
 .bar {
     height: 4px;
@@ -60,6 +68,10 @@ a {
 .margin-r-10 {
     margin-right: 10px;
 }
+
+.margin-l-15 {
+    margin-left: 15px;
+}
 /* color */
 .text-color {
     color: #77797e;
@@ -81,14 +93,15 @@ aside h4,
 /* APP LEFT SIDEBAR */
 .left-side {
     flex-basis: 230px;
-    padding: 20px 20px 0 20px;
+    padding: 0 20px;
     flex-shrink: 0;
     background-color: #000;
 }
 
 /* top sidebar */
 .top-sidebar {
-    height: calc(100% - 90px) ;
+    height: calc(100% - 90px);
+    min-height: 500px;
 }
 
 .top-sidebar li {
@@ -97,7 +110,8 @@ aside h4,
 
 /* app header */
 .header-app .brand {
-    margin-bottom: 20px;
+    padding: 20px 0;
+
 }
 
 .header-app .brand img {
@@ -121,6 +135,10 @@ aside h4,
 .personal-playlist > div:first-of-type i {
     font-size: 3.3em;
     padding-right: 5px;
+}
+
+.top-sidebar .personal-playlist {
+    overflow-y: auto;
 }
 
 /* bottom sidebar */
@@ -273,6 +291,9 @@ footer.player .side-player {
 .side-player ul {
     display: flex;
 }
+.side-player i {
+    font-size: 16px;
+}
 
 footer.player .miniature {
     height: 50%;
@@ -306,13 +327,13 @@ footer.player .miniature {
     display: flex;
 }
 .central-player .progres-bar-container .bar {
-    width: 430px;
+    width: 20vw;
     margin: 0 22px;
 }
 
 /* volume section  */
 .side-player .volume .bar {
-    width: 120px;
+    width: 125px;
 }
 
 .side-player .volume > .bar > .level {
@@ -343,3 +364,45 @@ footer.player .miniature {
     }
 
 }
+
+/* xs 550px - 600px */
+@media screen and (max-width: 600px) {
+   /* LEFT SIDEBAR */
+   .left-side {
+       flex-basis: 50px;
+       padding: 0;
+   }
+
+   .left-side .xs {
+       display: flex;
+       justify-content: center;
+   }
+
+   .header-app li a svg {
+       width: 40px;
+       margin-bottom: 10px;
+       
+   }
+
+   .header-app li a svg {
+        padding: 0;
+   }
+   .bottom-sidebar .install-app a svg {
+       margin: 0;
+   }
+
+
+   .left-side .install-app {
+       border: none;
+   }
+
+   .left-side .bottom-sidebar .user.xs .bg-user {
+    margin-right: 0;
+   }
+   .left-side .s-up {
+       display: none;
+   }
+
+
+}
+
